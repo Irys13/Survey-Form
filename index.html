@@ -3,14 +3,45 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style-survey.css">
-	<title>Survey Form</title>
+	<title>Cats Survey Form</title>
+	 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
-	<h1 id="title">Survey Form</h1>
-	<p id="description">Description should be here</p>
-	<form id="survey-form">
+<div class="mug">
 	
+	<h1 id="title">Cats Survey Form</h1>
+	<p id="description">Let us know more about your cat</p>
+	<form id="survey-form" action="/submit-form">
+	Name of your cat:
+		<input id="name-label" id="name" type="text" name="cat-name" placeholder="Cat name" required></br>
+	Email:
+		<input id="email-label" id="email" type="email" name="email" placeholder="Your cat email" required></br>
+	Age:
+		<input id="number-label" id="number" type="number" name="age" placeholder="Your cat age" min="1" max="30"></br>
+	Type of coat:
+		<select name="coat">
+			<option value="Short">Short</option>
+			<option value="Long">Long</option>
+			<option value="Curly">Curly</option>
+			<option value="Hairless">Hairless</option>
+		</select>
+		Gender of your cat:</br>
+		<input type="radio" name="gender" value="female">Female </br>
+		<input type="radio" name="gender" value="male">Male </br>
+		<input type="radio" name="gender" value="unknown" checked>Unknown</br>
+		
+		What does your cat like to eat?</br>
+		<input type="checkbox" name="fav-food" value="Chicken">Chicken</br>
+		<input type="checkbox" name="fav-food" value="Beef">Beef</br>
+		<input type="checkbox" name="fav-food" value="Fish">Fish</br>
+		<input type="checkbox" name="fav-food" value="Veg of fruit">Veg or fruit</br>
+		<input type="checkbox" name="fav-food" value="Own hair">Own hair</br>
+		
+		Please tell us about your cat quirks:</br>
+		<textarea name="quirks" rows="10" cols="30" id="quirks"></textarea></br>
+		
+		<button type="submit" id="submit">Submit</button>
 	</form>
-	
+</div>
 </body>
 </html>

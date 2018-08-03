@@ -1,2 +1,17 @@
 body {
+	background: url('http://backgroundlabs.com/wp-content/uploads/2013/02/paw-print-seamless-pattern02.png');
+	margin: 0;
+	padding: 0;
+	text: #451E3B;
+	}
+
+.mug {
+	background-color: #CFC2CB;
+	width: 50%;
+	height: auto;
+	font: green;
+	text-align: center;
+	margin: -2% 25% 0 25%;
+	padding: 5% 0 5% 0;
+	
 }
