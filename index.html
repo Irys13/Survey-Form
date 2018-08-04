@@ -12,33 +12,53 @@
 	<h1 id="title">Cats Survey Form</h1>
 	<p id="description">Let us know more about your cat</p>
 	<form id="survey-form" action="/submit-form">
-	Name of your cat:
-		<input id="name-label" id="name" type="text" name="cat-name" placeholder="Cat name" required></br>
-	Email:
-		<input id="email-label" id="email" type="email" name="email" placeholder="Your cat email" required></br>
-	Age:
-		<input id="number-label" id="number" type="number" name="age" placeholder="Your cat age" min="1" max="30"></br>
-	Type of coat:
-		<select name="coat">
+	<div class="questions">
+	<label id="name-label" for="name">* Name of your cat:</label>
+	</div>
+	<div class="answers">
+		<input autofocus id="name" type="text" name="cat-name" placeholder="Cat name" required></br>
+		</div>
+	<div class="questions">
+	<label id="email-label" for="email"> * Email: </label></div>
+	<div class="answers">
+		<input id="email" type="email" name="email" placeholder="Your cat email" required></br></div>
+	<div class="questions">
+	<label id="number-label" for="number"> * Age:</label></div>
+		<div class="answers">
+		<input id="number" type="number" name="age" placeholder="Your cat age" min="1" max="30"></br></div>
+	<div class="questions">
+	<label for="coat">Type of coat:</label></div>
+	<div class="answers">
+	<select id="dropdown" name="coat">
 			<option value="Short">Short</option>
 			<option value="Long">Long</option>
 			<option value="Curly">Curly</option>
 			<option value="Hairless">Hairless</option>
-		</select>
-		Gender of your cat:</br>
+		</select></div>
+	<div class="questions">
+	<label for="gender">
+		Gender of your cat:</br></label></div>
+		<div class="answers">
 		<input type="radio" name="gender" value="female">Female </br>
 		<input type="radio" name="gender" value="male">Male </br>
 		<input type="radio" name="gender" value="unknown" checked>Unknown</br>
+		</div>
 		
-		What does your cat like to eat?</br>
+			<div class="questions">
+		<label for="fav-food">
+		What does your cat like to eat?</br></label></div>
+		<div class="answers">
 		<input type="checkbox" name="fav-food" value="Chicken">Chicken</br>
 		<input type="checkbox" name="fav-food" value="Beef">Beef</br>
 		<input type="checkbox" name="fav-food" value="Fish">Fish</br>
 		<input type="checkbox" name="fav-food" value="Veg of fruit">Veg or fruit</br>
 		<input type="checkbox" name="fav-food" value="Own hair">Own hair</br>
+		</div>
 		
-		Please tell us about your cat quirks:</br>
-		<textarea name="quirks" rows="10" cols="30" id="quirks"></textarea></br>
+		<div class="questions">
+		<label for="fav-food">
+		Please tell us about your cat quirks:</br></label></div>
+		<div class="answers"><textarea name="quirks" rows="10" cols="30" id="quirks"></textarea></br></div>
 		
 		<button type="submit" id="submit">Submit</button>
 	</form>
