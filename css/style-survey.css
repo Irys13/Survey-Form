@@ -16,13 +16,13 @@ body {
 .mug {
 	background-color: #CFC2CB;
 	width: 50%;
-	font: green;
 	text-align: center;
 	margin: 0% 25% 0 25%;
 	padding: 5% 0 5% 0;
 	position: absolute;
 	bottom: 0;
 	top: 0;
+	height: 100%;
 }
 
 .questions {
@@ -67,4 +67,52 @@ button {
 p {
 	font: 10px;
 	color: #451E3B;
+}
+
+@media only screen and (max-width: 1280px) {
+	.mug {
+	width: 66%;
+	margin: 0% 17% 0 17%;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	input[type=text], [type=email], [type=number], textarea, checkbox, select{ 
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	input[type=text], [type=email], [type=number], textarea, checkbox, select{ 
+		width: 70%;
+	}
+	.mug {
+	width: 70%;
+	margin: 0% 15% 0 15%;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	input[type=text], [type=email], [type=number], textarea, checkbox, select{ 
+		width: 90%;
+	}
+	.mug {
+	width: 80%;
+	margin: 0% 10% 0 10%;
+	}
+	
+@media only screen and (max-width:320px) {
+	input[type=text], [type=email], [type=number], textarea, checkbox, select{ 
+		width: 90%;
+	}
+	.questions {
+	width: 50%;
+	display: inline-block;
+	}
+	.mug {
+		height: 100%;
+		bottom: 0;
+		position: absolute;
+		top: 0;
+}
 }
