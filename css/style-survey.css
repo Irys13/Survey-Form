@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #451E3B;
+	overflow: hidden;
 	}
 
 #title {
